@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>نفس - الإرشادات الهامة</title>
+    <style>
+        :root {
+            --primary-color: #0d5956;
+            --secondary-color: #ff6b81;
+            --accent-color: #63769b;
+            --light-color: #ccfff6;
+            --text-color: #333;
+            --light-text: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        /* NAVBAR / HEADER */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand.logo-text {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .navbar-brand.logo-text:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        .sequence {
+            padding: 1rem 2rem;
+            background-color: #f0f0f0;
+            font-size: 1.1rem;
+        }
+        
+        .sequence a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+        
+        .sequence span {
+            color: var(--secondary-color);
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--light-color) 0%, var(--accent-color) 100%);
+            color: var(--primary-color);
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: var(--light-text);
+        }
+        
+        .hero-image {
+            max-width: 600px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+        
+        .instructions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .instruction-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .instruction-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .instruction-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .instruction-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        
+        .instruction-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #555;
+            text-align: right;
+        }
+        
+        .instruction-content {
+            text-align: right;
+            margin-top: 1.5rem;
+        }
+        
+        .instruction-content p {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+        
+  footer{
+      background-color: #63769b;
+    width: 100vw;
+    height: 8vh;
+}
+footer p {
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ padding-top: 10px;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="index.html" class="navbar-brand logo-text">نفس</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#who_we_are">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="psychological.html">التأهيل النفسي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="social.html">التأهيل الاجتماعي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eductional.html">التأهيل التعليمي</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="logo d-none d-md-block">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="شعار نفس">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="instructions">
+        <nav class="sequence">
+            <a href="index.html">الرئيسية</a> >
+            <a href="psychological.html">التأهيل النفسي</a> >
+            <a href="psychological.html">التمارين النفسية</a> >
+            <a href="psychologicalaudio.html">الموارد الصوتية</a> >
+            <span>الإرشادات الهامة</span>
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 data-aos="fade-down">الإرشادات الهامة</h1>
+                <p data-aos="fade-up">خطوات صغيرة... تصنع فرقًا كبيرًا في يومك</p>
+                <p data-aos="fade-up" style="font-size: 1.5rem; color: var(--light-text); margin-top: 1rem;">
+                    في أوقات كثيرة بنحتاج صوت يرشدنا، وكلمة تطمّن قلوبنا
+                    <br>
+                    بهالصفحة جمعنا أهم الإرشادات النفسية اللي بتساعدك تتعامل مع نفسك ومع الحياة بلطف
+                </p>
+                <img data-aos="zoom-in" src="images/4584502.png" alt="الإرشادات الهامة" class="hero-image">
+            </div>
+        </div>
+
+        <div class="instructions-section" style="background-color: #f8f9fa; padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">إرشادات نفسية عملية</h2>
+                <p class="section-subtitle" data-aos="fade-up">نصائح وأساليب تساعدك في التعامل مع المشاعر والتحديات النفسية</p>
+
+                <div class="instructions-grid">
+                    <div class="instruction-card" data-aos="fade-right">
+                        <img src="images/7bfdc9e7994cf81d0b7254905720fcb7.jpg" alt="كيفية التعامل مع الخوف" class="instruction-image">
+                        <h3>كيفية التعامل مع الخوف</h3>
+                        <p>تعرف على طرق بسيطة تساعدك تواجه خوفك بخطوات عملية، وتستعيد إحساسك بالأمان والسيطرة على الموقف</p>
+                        <div class="instruction-content">
+                            <p>خذي "وقت استراحة" عندما تشعرين بالخوف، وابتعدي قليلاً عن الموقف لتصفّي ذهنك.</p>
+                            <p>مارسي تمارين التنفّس البطيء أو التهدئة الجسدية لتقليل الاستجابة الفورية للخوف.</p>
+                            <p>واجهي خوفك تدريجياً، ببطء، بدءاً بموقف أقلّ تهديداً ثم تصاعداً منه.</p>
+                            <p>تحدّي الأفكار المزعجة أو المبالغ فيها حول الخوف واستبدليها بأفكار أكثر واقعية.</p>
+                            <p>اهتمي بنفسك جسمياً — نوم منتظم، تغذية جيدة، حركة — لأن الصحة الجسدية تؤثر على شعورك بالخوف.</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction-card" data-aos="fade-up">
+                        <img src="images/8fe52184515cb968802c88f523d9bb84.jpg" alt="كيف أتعامل مع الفقد أو الضغط" class="instruction-image">
+                        <h3>كيف أتعامل مع الفقد أو الضغط</h3>
+                        <p>استراتيجيات للتعامل مع مشاعر الفقد والضغط النفسي</p>
+                        <div class="instruction-content">
+                            <p>اعترفي بخسارتك أو ما تمرّين به، ولا تكبّتي مشاعرك في داخلِك.</p>
+                            <p>أتى دورك لتقبّل أن الحزن والتغيّر هما جزء من الحياة، وليس خطأً كبيراً أن تشعري بهما.</p>
+                            <p>تواصلي مع أشخاص تثقين بهم، أو انضمي لمجموعة دعم تشعرين فيها بأنك لست وحدك.</p>
+                            <p>اهتمي بروتينك الجسدي والنفسي — النشاط، التغذية،النوم — لأنها تساهم في تقوية قدرتك على الصبر والتحمّل.</p>
+                            <p>امنحي نفسك الوقت الكافي للشفاء، ولا تتوقّعي "أن تنتهي الأمور" بسرعة كبيرة؛ الشفاء عملية.</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction-card" data-aos="fade-left">
+                        <img src="images/33e29e4da070c27dff02dd5a97f98400.jpg" alt="مقاومة الشعور بعدم القدرة على فعل شيء" class="instruction-image">
+                        <h3>مقاومة الشعور بعدم القدرة على فعل شيء</h3>
+                        <p>تجاوز مشاعر العجز واستعادة القدرة على الفعل</p>
+                        <div class="instruction-content">
+                            <p>ابدئي بخطوة صغيرة يمكنك القيام بها الآن — لا يجب أن تكون مثالية، المهم البدء.</p>
+                            <p>حددِي ما تستطيعين تغييره ما بين ما يمكنك وما ليس بيدك، وركّزي طاقتك على ما تحت سيطرتك.</p>
+                            <p>استخدمي "الحديث الداخلي" الإيجابي: بدل ما تقولين "ما بقدر"، جربي "رح أحاول"، "حتى خطوة صغيرة لها قيمة".</p>
+                            <p>احتفلي بأي إنجاز، مهما كان صغيراً — لأن التقدّم البطيء أفضل من السكون.</p>
+                            <p>طوّري عقليتك بأن التعلّم من الخطأ والجهد أهم من أن "تفشلي" — واعتبري كل تجربة فرصة.</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction-card" data-aos="fade-right">
+                        <img src="images/a3a58de730ab663c7247ed1b47c5ada5.jpg" alt="التعامل مع اليأس أو انعدام الأمل" class="instruction-image">
+                        <h3>التعامل مع اليأس أو انعدام الأمل</h3>
+                        <p>استراتيجيات لاستعادة الأمل والطاقة الإيجابية</p>
+                        <div class="instruction-content">
+                            <p>كتابة الامتنان: سجّلي يوميًا سهولة ثلاث أمور أنتِ ممتنة لها. هذا التمرين يُظهر الجوانب الإيجابية في حياتك ويقلّل من الشعور باليأس.</p>
+                            <p>تحديد أهداف صغيرة: حاولي وضع أهداف واقعية ومكّونة من "خطوات" — ماشي كبير، حتى خطوة صغيرة تساهم في شعور الأمل والإنجاز.</p>
+                            <p>استثمري في نقاط قوتك: فكّري بماذا أنتِ جيدة أو ما تحبينه في نفسك، وركّزي عليه. استخدام نقاط قوتك يُعزّز من قوتك النفسية.</p>
+                            <p>استخدمي الفكاهة: الضحك أو حتى التفكير في موقف فكاهي يمكن يساعد بإعادة النظر للأمور من منظور أخفّ ويخفّف من ثقل المشاعر السلبية.</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction-card" data-aos="fade-up">
+                        <img src="images/39ef4b61b1b880fd695d6522622148d8.jpg" alt="التغلب على الشعور بالوحدة" class="instruction-image">
+                        <h3>التغلب على الشعور بالوحدة</h3>
+                        <p>طرق للتعامل مع مشاعر الوحدة والعزلة</p>
+                        <div class="instruction-content">
+                            <p>القبول الذاتي: اعترفي بمشاعرك من الوحدة بدون لوم نفسك، لأن قبول ما تشعرين به يُعد خطوة أولى للتعامل معه.</p>
+                            <p>ممارسة الوعي الذهني (Mindfulness): الوعي يساعدك تكوني حاضِرة في اللحظة وتقبّلي مشاعرك دون حكم.</p>
+                            <p>استخدمي التعاطف مع النفس (Self-Compassion): عاملِي نفسك بنفس الحنان الذي تعبرين به لصديقة في موقف صعب، مثلاً اجلسي مع نفسك بلطف، فكّري بما تحتاجين وتذكّري أنك تستحقين الرأفة.</p>
+                            <p>ابني شبكة تواصل: تواصلي مع أشخاص تثقين بهم — العائلة، الأصدقاء، أو حتى مجموعات دعم — فالتواصل البشري مهم جدًا لتخفيف الوحدة.</p>
+                            <p>انخرطي في نشاط تطوعي: التطوع لا يساعد فقط الآخرين، بل يعزّز من إحساسك بقيمة الذات وينمي علاقات جديدة.</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction-card" data-aos="fade-left">
+                        <img src="images/6a6c23a4ba03d5f7dac2b3b803decc46.jpg" alt="إدارة الغضب والانفعالات" class="instruction-image">
+                        <h3>إدارة الغضب والانفعالات</h3>
+                        <p>أساليب للسيطرة على الغضب والانفعالات الشديدة</p>
+                        <div class="instruction-content">
+                            <p>خذي استراحة عندما تغضبين: كما تقول نصائح الطب النفسي، أحيانًا أبسط شيء هو الانسحاب مؤقتًا من الموقف لتفادي انفجار الغضب.</p>
+                            <p>عبّري عن احتياجاتك بوضوح: عندما تهدئين، حدّدي ما الذي أزعجك وعبّري عنه بطريقة بسيطة لكن واضحة، بلا لوم مفرط.</p>
+                            <p>راقبي أفكارك لحظة الغضب: فكّري "لماذا هذا الموقف أثار غضباً كبيراً؟" وحاولي إعادة تقييم ما إذا كانت توقعاتك واقعية.</p>
+                            <p>مارسي التنفّس العميق: عندما تشعرين أن غضبك يتصاعد، تنفّسي ببطء وعمق مرات عدة حتى تهدئين.</p>
+                            <p>استخدمي "الإلهاء البناء": إذا كان الغضب شديد جدًا، قد يكون من المفيد مؤقتًا الانخراط بشيء آخر (مثل تغيير المكان، سماع موسيقى هادئة، الخ) لأن بعض الأبحاث تقول إن تغيير البيئة يساعد على تهدئة الانفعالات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; موقع نفس. جميع الحقوق محفوظة 2025</p>
+    </footer>
+
+       <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+     </div>
+   
+</body>
+</html>

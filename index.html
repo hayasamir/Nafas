@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>نفس - الصفحة الرئيسية</title>
+
+    <style>
+        :root {
+            --primary-color: #0d5956;
+            --secondary-color: #ff6b81;
+            --accent-color: #63769b;
+            --light-color: #ccfff6;
+            --text-color: #333;
+            --light-text: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        /* NAVBAR / HEADER */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand.logo-text {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .navbar-brand.logo-text:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* HOME */
+        .homebage {
+            background-color: #c3efed;
+        }
+
+        .home {
+            background-image: linear-gradient(180deg, rgba(165, 206, 199, 0.6) 0%, #151f33 80%),
+                url(../images/pexels-pok-rie-239659-scaled.jpg) !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            min-height: 100vh;
+            padding-top: 10vw;
+            background-position: top;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 3rem;
+        }
+
+        .home h1 {
+            color: #ebebeb;
+            text-shadow: 0 2px 6px rgba(13, 61, 60, 0.658);
+            text-align: center;
+            font-size: 3.5rem;
+            word-spacing: 10px;
+            margin-bottom: 1rem;
+            line-height: 1.2em;
+            text-shadow: 0em 0em 0.8em rgba(0, 17, 51, 0.55);
+            font-weight: 700;
+        }
+
+        .home h1:first-child {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .home p {
+            text-align: center;
+            font-size: 1.8rem;
+            color: rgb(214, 181, 181);
+            line-height: 1.6;
+            text-shadow: 0em 0em 0.8em rgba(0, 17, 51, 0.55);
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 0 1rem;
+        }
+
+        .homebage h2 {
+            color: #555555;
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 2.5rem;
+        }
+
+        .homebage .cardes {
+            padding-top: 2.5rem;
+            padding-bottom: 3rem;
+        }
+
+        .cardes .card-custom {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 22px;
+            text-align: center;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+            cursor: pointer;
+            min-height: 200px;
+        }
+
+        .cardes .card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cardes .card-custom i {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .cardes .card-custom h3 {
+            margin: 1rem 0;
+            color: var(--primary-color);
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+
+        .cardes .card-custom a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .cardes .card-custom p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* WHO WE ARE */
+        .who_we_are {
+            background-image: linear-gradient(160deg, #f6ffff, #e6fffe);
+            padding: 4rem 0 3rem;
+        }
+
+        .who_we_are h1 {
+            text-align: center;
+            font-size: 2.4rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            font-weight: 700;
+            padding: 0 1rem;
+        }
+
+        .who_we_are .content-img {
+            width: 100%;
+            border-radius: 100px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .who_we_are h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: flex-end;
+        }
+
+        .who_we_are h2 img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        .who_we_are p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #555;
+        }
+
+        .who_we_are span {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #63769b;
+            width: 100%;
+            min-height: 8vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer p {
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+            margin: 0;
+            padding: 0.5rem 1rem;
+        }
+
+        /* RESPONSIVE TWEAKS */
+        @media (max-width: 992px) {
+            .home {
+                padding-top: 5rem;
+                min-height: 80vh;
+            }
+
+            .home h1 {
+                font-size: 2.6rem;
+            }
+
+            .home h1:first-child {
+                font-size: 3rem;
+            }
+
+            .home p {
+                font-size: 1.4rem;
+            }
+
+            .who_we_are .content-img {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .home {
+                padding-top: 4rem;
+                min-height: 70vh;
+            }
+
+            .home h1 {
+                font-size: 2.2rem;
+            }
+
+            .home h1:first-child {
+                font-size: 2.6rem;
+            }
+
+            .home p {
+                font-size: 1.1rem;
+            }
+
+            .who_we_are h1 {
+                font-size: 2rem;
+            }
+
+            .cardes .card-custom {
+                margin-bottom: 1rem;
+            }
+
+            .who_we_are .content-img {
+                height: 250px;
+                border-radius: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="index.html" class="navbar-brand logo-text">نفس</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#who_we_are">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="psychological.html">التأهيل النفسي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="social.html">التأهيل الاجتماعي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eductional.html">التأهيل التعليمي</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="logo d-none d-md-block">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="شعار نفس">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="homebage">
+        <div class="home">
+            <div class="container text-center">
+                <h1>نفس</h1>
+                <h1 data-aos="fade-down">
+                    مرحباً! نحن هنا لندعمك خطوة بخطوة
+                </h1>
+                <p data-aos="fade-up">
+                    في هذا المكان نمنحك مساحة آمنة لاستعادة توازنك النفسي، الاجتماعي، والتعليمي
+                    <br>
+                    مساحة تساعدك تتنفس، تفهم حالك، وتبدأ رحلة جديدة بوعي وقوة
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 data-aos="fade-up">
+                !لنبدأ رحلة التأهيل معاً
+            </h2>
+
+            <div class="row cardes justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="fade-right">
+                    <div class="card-custom">
+                        <i class="fa-solid fa-brain" style="color:rgb(228, 112, 112);"></i>
+                        <a href="psychological.html">
+                            <h3>التأهيل النفسي</h3>
+                        </a>
+                        <p>خطوات لمساعدتك على التوازن النفسي</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="fade-up">
+                    <div class="card-custom">
+                        <i class="fa-solid fa-hands-praying" style="color:rgb(255, 194, 194);"></i>
+                        <a href="social.html">
+                            <h3>التأهيل الاجتماعي</h3>
+                        </a>
+                        <p>تطوير مهاراتك الاجتماعية والتواصل</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3" data-aos="fade-left">
+                    <div class="card-custom">
+                        <i class="fa-solid fa-book-open-reader" style="color:rgb(112, 228, 151);"></i>
+                        <a href="eductional.html">
+                            <h3>التأهيل التعليمي</h3>
+                        </a>
+                        <p>مصادر تعليمية ودعم دراسي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO WE ARE SECTION -->
+    <section class="who_we_are" id="who_we_are">
+        <div class="container">
+            <h1 data-aos="fade-down">!أنت تستحق أن تعيش بسلام، وأن تعيد بناء نفسك خطوة بخطوة</h1>
+
+            <!-- BLOCK 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0" data-aos="fade-left">
+                    <img src="images/26ed14c7c55adbebc0fb437628896c21.jpg" alt="من نحن" class="content-img">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <h2>
+                        <img src="images/logo.png" alt="شعار نفس">
+                        من نحن
+                    </h2>
+                    <p>
+                        <span>نَفَس >></span>
+                        مساحة آمنة وهادئة للشباب بين 17–25، هدفها مساعدتك تستعيد توازنك النفسي خطوة بخطوة.
+                        نوفر لك تمارين بسيطة، موارد صوتية، ومساحات تفريغ مشاعر تساعدك تفهم نفسك أكتر
+                        وتتعامل مع الضغط والقلق بصحة ووعي.
+                    </p>
+                </div>
+            </div>
+
+            <!-- BLOCK 2 -->
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0" data-aos="fade-right">
+                    <img src="images/8126ee314693ae6bb0d282190dcd9da5.jpg" alt="رؤيتنا" class="content-img">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-left">
+                    <h2>رؤيتنا</h2>
+                    <p>
+                        <span>نطمح >></span>
+                        إلى أن نكون مساحةً رقميةً آمنة تُعين الشباب على فهم ذواتهم، واستعادة توازنهم النفسي،
+                        والتعامل مع ضغوط الحياة بوعيٍ وهدوء.
+                    </p>
+                </div>
+            </div>
+
+            <!-- BLOCK 3 -->
+            <div class="row align-items-center mb-4">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0" data-aos="fade-left">
+                    <img src="images/82ca8bae86246ba15e523358dfb1f3b4.jpg" alt="قيمنا الأساسية" class="content-img">
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-right">
+                    <h2>قيمنا الأساسية</h2>
+                    <p>
+                        <span>نستند >></span>
+                        في عملنا إلى مجموعة من المبادئ التي تشكّل جوهر هذا المشروع؛ فنحن نضع الإنسان أولًا،
+                        ونؤمن بضرورة توفير مساحة آمنة تحترم خصوصيته ومشاعره.
+                        نعتمد الصدق والوضوح في كل ما نقدّمه، ونسعى إلى دعم الزائر بلطف ورحمة، مع الالتزام
+                        بتقديم محتوى موثوق يساعده على فهم ذاته، والتقدّم بخطوات ثابتة نحو توازنه النفسي
+                        والاجتماعي والتعليمي.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; موقع نفس. جميع الحقوق محفوظة 2025</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>

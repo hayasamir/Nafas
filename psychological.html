@@ -1,0 +1,1026 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <title>نفس - التأهيل النفسي</title>
+       <style>
+              :root {
+            --primary-color: #0d5956;
+            --secondary-color: #ff6b81;
+            --accent-color: #63769b;
+            --light-color: #ccfff6;
+            --text-color: #333;
+            --light-text: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            direction: rtl;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        .psychological {
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+       
+          /* NAVBAR / HEADER */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand.logo-text {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .navbar-brand.logo-text:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+         .sequence {
+      padding: 1rem 2rem;
+      background-color: #f0f0f0;
+      font-size: 16px;
+    }
+
+    .sequence a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    .sequence span {
+      color: var(--secondary-color);
+    }
+        
+        .hero-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--light-color) 0%, var(--accent-color) 100%);
+            color: var(--primary-color);
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--light-text);
+        }
+        
+        .hero-image {
+            max-width: 600px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .skill-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        
+        .skill-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-card ul {
+            text-align: right;
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        
+        .skill-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-top: 1rem;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        .panic-content, .sleep-content {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        
+        .panic-text, .sleep-text {
+            flex: 1;
+        }
+        
+        .panic-video, .sleep-video {
+            flex: 1;
+        }
+        
+        .point {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .point img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .point h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .point p {
+            font-size: 1rem;
+        }
+        
+        .thinking-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .thinking-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .thinking-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .thinking-card h3 {
+            font-size: 1.7rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .thinking-card p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .thinking-tips {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .thinking-tips span {
+            background: #f0f8ff;
+            padding: 0.7rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+        /* space */
+        .space{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    color: #ff6b81;
+}
+.title i{
+    color: #4bada9;
+    font-size: 40px;
+}
+.space p{
+    color: #555555;
+    text-align: center;
+}
+.space textarea{
+    width: 900px;
+    height: 300px;
+    text-align: end;
+    margin-top: 30px;
+    padding: 40px;
+    font-size: 20px;
+    color: #adadad;
+    border: none;
+    outline: 1px solid #0d5956 ;
+}
+.emotions-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.emotion-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 5px solid #8a66ff; 
+    animation: fadeIn 0.4s ease;
+     min-width: 1000px;
+    height: 100px;
+    margin: 0px 20%;
+}
+
+.emotion-card .date {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.emotion-card .text {
+    font-size: 16px;
+    color: #444;
+    white-space: pre-wrap; 
+    line-height: 1.6;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+ button{
+    width: 200px;
+    height: 50px;
+    background-color: #ff6b81;
+    color: white;
+    font-size: 15px;
+     border: none;
+     outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ button:hover{
+     background-color: #d83f56;
+}
+/* شعورك اليوم */
+        .mood-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+     background-color: #fff5f5;
+}
+
+.mood-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0d7070;
+}
+
+.mood-section p {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.mood-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.mood-card {
+    background: #e8f8f8;
+    padding: 18px 25px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #b8e2e2;
+    transition: 0.3s;
+    box-shadow: rgba(0,0,0,0.05) 0px 4px 4px;
+}
+
+.mood-card:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0,0,0,0.15) 0px 8px 12px;
+}
+
+.mood-card input {
+    display: none;
+}
+
+.mood-card input:checked + span,
+.mood-card input:checked {
+    font-weight: bold;
+    color: #0d7070;
+  
+}
+/* tip text */
+.mood-section p{
+  color: #b84a73;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+       
+ /* مواجهة المشاكل */
+.abc-model {
+ background-color: #4c5f966e;
+  font-family: 'Arial', sans-serif;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.abc-model h2 {
+  text-align: center;
+  color: #2b3a67;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.abc-item {
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fff7fb, #f4f7fc);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 90%;
+  max-width: 600px;
+    margin: 40px auto;
+}
+
+.abc-item input[type="checkbox"] {
+  display: none;
+}
+
+.abc-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  font-weight: bold;
+  background-color: #ff7f91;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #ffc1c8;
+  border-radius: 10px;
+}
+
+.abc-item label:hover {
+  background-color: #ff607a;
+}
+
+.abc-item .icon {
+  font-size: 20px;
+}
+
+.abc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
+  padding: 0 20px;
+  opacity: 0;
+}
+
+.abc-content p {
+  margin: 15px 0;
+  color: #555;
+}
+
+.abc-content textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+
+.tip {
+  background-color: #ffe6eb;
+  color: #ff4d6d;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.abc-item input:checked ~ .abc-content {
+  max-height: 300px;
+  padding: 15px 20px;
+  opacity: 1;
+}
+        
+  .daily-message {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding-top: 100px;
+}
+
+.daily-message h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2b3a67;
+}
+
+.quotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.quotes {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 250px;
+  text-align: center;
+}
+
+.quote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.quotes .icon {
+  font-size: 24px;
+}
+
+.quotes {
+  background-color: #ff7f91;    
+}
+
+
+      footer{
+      background-color: #63769b;
+    width: 100vw;
+    height: 8vh;
+}
+footer p {
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ padding-top: 10px;
+}
+
+        
+        .quick-links {
+            background: #f8f9fa;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .quick-links h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .quick-links-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .quick-link-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            min-width: 200px;
+            transition: transform 0.3s;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        
+        .quick-link-card:hover {
+            transform: translateY(-5px);
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+   
+</head>
+<body>
+   <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="index.html" class="navbar-brand logo-text">نفس</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#who_we_are">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="psychological.html">التأهيل النفسي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="social.html">التأهيل الاجتماعي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eductional.html">التأهيل التعليمي</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="logo d-none d-md-block">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="شعار نفس">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="psychological">
+        <nav class="sequence" aria-label="مسار التنقل">
+            <a href="index.html">الرئيسية</a> >
+            <span>التأهيل النفسي</span>
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 data-aos="fade-down">التأهيل النفسي</h1>
+                <p data-aos="fade-up">ابدأ رحلتك نحو القوة النفسية والطمأنينة</p>
+                <img data-aos="zoom-in" src="images/hand-drawn-visit-psychologist-concept.png" alt="رحلة التأهيل النفسي والاسترخاء الذهني" class="hero-image">
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <div class="container">
+                <h3>الموارد المتاحة</h3>
+                <div class="quick-links-container">
+                    <a href="psychologicalaudio.html" class="quick-link-card">
+                        <i class="fa-solid fa-podcast" style="font-size: 2rem; color: #ff6b81; margin-bottom: 0.5rem;"></i>
+                        <h4 style="color:#ff6b81; margin: 0.5rem 0;">الموارد الصوتية</h4>
+                        <p style="color: #666; font-size: 0.9rem;">استمع لمقاطع صوتية للاسترخاء</p>
+                    </a>
+                    
+                    <a href="psyscinstructions.html" class="quick-link-card">
+                        <i class="fa-solid fa-lightbulb" style="font-size: 2rem; color: #ff6b81; margin-bottom: 0.5rem;"></i>
+                        <h4 style="color: #ff6b81;; margin: 0.5rem 0;">الإرشادات الهامة</h4>
+                        <p style="color: #666; font-size: 0.9rem;">نصائح عملية للتعامل مع المشاعر</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="psychological-section" style="background-color: #f8f9fa; padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">تمارين التنفس والاسترخاء</h2>
+                <p class="section-subtitle" data-aos="fade-up">تعلم كيفية التحكم في تنفسك لتهدئة جسمك وعقلك</p>
+
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-right">
+                            <iframe src="https://www.youtube.com/embed/XDVLRtqa6h0" title="تمرين التنفس العميق للاسترخاء" frameborder="0" allowfullscreen></iframe>
+                        <h3>التنفس العميق</h3>
+                        <p>تقنية بسيطة وفعالة لتخفيف التوتر والقلق</p>
+                        <ul>
+                            <li>🌬️ استنشق ببطء من الأنف</li>
+                            <li>⏱️ احبس النفس لثوانٍ قليلة</li>
+                            <li>👄 ازفر ببطء من الفم</li>
+                            <li>🔄 كرر 5-10 مرات</li>
+                        </ul>
+                        <div class="video-container">
+                            <!-- <iframe src="https://www.youtube.com/embed/XDVLRtqa6h0" title="تمرين التنفس العميق للاسترخاء" frameborder="0" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-aos="fade-up">
+                            <iframe src="https://www.youtube.com/embed/6vO1wPAmiMQ" title="تمرين استرخاء العضلات التدريجي" frameborder="0" allowfullscreen></iframe>
+                        <h3>استرخاء العضلات التدريجي</h3>
+                        <p>تقنية لتحرير التوتر الجسدي والعقلي</p>
+                        <ul>
+                            <li>🦶 ابدأ بشد عضلات قدميك</li>
+                            <li>🦵 انتقل إلى عضلات الساقين</li>
+                            <li>💪 استمر في الصعود تدريجياً</li>
+                            <li>😌 أطلق التوتر مع الزفير</li>
+                        </ul>
+                        <!-- <div class="video-container"> -->
+                            <!-- <iframe src="https://www.youtube.com/embed/6vO1wPAmiMQ" title="تمرين استرخاء العضلات التدريجي" frameborder="0" allowfullscreen></iframe> -->
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="skill-card" data-aos="fade-left">
+        <iframe  src="https://www.youtube.com/embed/2_Ot9-n0Yi4?si=GL1gzumrzntnYKWh"
+                             title="جلسة تأمل موجه للاسترخاء" frameborder="0" allowfullscreen></iframe>                        <h3>التأمل الموجه</h3>
+                        <p>ممارسة يومية لتهدئة العقل وتقوية التركيز</p>
+                        <ul>
+                            <li>🧘 اجلس في مكان هادئ</li>
+                            <li>🌬️ ركز على أنفاسك</li>
+                            <li>💭 لاحظ الأفكار دون حكم</li>
+                            <li>🕒 ابدأ بـ 5 دقائق يومياً</li>
+                        </ul>
+                        <div class="video-container">
+                            <!-- <iframe  src="https://www.youtube.com/embed/2_Ot9-n0Yi4?si=GL1gzumrzntnYKWh"
+                             title="جلسة تأمل موجه للاسترخاء" frameborder="0" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="psychological-section" style="background-color: white; padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">التعامل مع نوبات الهلع</h2>
+                <p class="section-subtitle" data-aos="fade-up">استراتيجيات عملية لمواجهة نوبات القلق والهلع</p>
+
+                <div class="panic-content">
+                    <div class="panic-text" data-aos="fade-right">
+                        <h3>استراتيجيات فورية أثناء النوبة</h3>
+                        <div class="panic-points">
+                            <div class="point">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="تقنيات التنفس لنوبات الهلع">
+                                <div>
+                                    <h4>التركيز على التنفس</h4>
+                                    <p>استنشق ببطء من الأنف وازفر ببطء من الفم</p>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="تشتيت الانتباه أثناء نوبات الهلع">
+                                <div>
+                                    <h4>تشتيت الانتباه</h4>
+                                    <p>انظر إلى شيء معين وركز على تفاصيله</p>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="الاتصال بالآخرين أثناء النوبة">
+                                <div>
+                                    <h4>الاتصال بالآخرين</h4>
+                                    <p>تحدث مع شخص مقرب لتشتيت الانتباه</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panic-video" data-aos="fade-left">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/lFxI0O2JmNE" title="تمرين التعامل مع نوبات الهلع" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="psychological-section" style="background-color: #fff5f5; padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">تمارين التفكير الإيجابي</h2>
+                <p class="section-subtitle" data-aos="fade-up">تعلم كيفية تحويل أفكارك السلبية إلى إيجابية</p>
+
+                <div class="thinking-grid">
+                    <div class="thinking-card" data-aos="flip-left">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="سجل الامتنان اليومي" class="thinking-image">
+                        <h3>سجل الامتنان اليومي</h3>
+                        <p>تدرب على ملاحظة الجوانب الإيجابية في حياتك</p>
+                        <div class="thinking-tips">
+                            <span>📝 اكتب 3 أشياء تشعر بالامتنان لها</span>
+                            <span>💭 ركز على التفاصيل الصغيرة</span>
+                            <span>🔄 كرر لمدة 21 يوماً</span>
+                            <span>✨ لاحظ التغير في نظرتك</span>
+                        </div>
+                    </div>
+
+                    <div class="thinking-card" data-aos="flip-up">
+                        <img src="https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="إعادة صياغة الأفكار السلبية" class="thinking-image">
+                        <h3>إعادة صياغة الأفكار</h3>
+                        <p>غير طريقة تفكيرك تجاه المواقف الصعبة</p>
+                        <div class="thinking-tips">
+                            <span>🔍 تعرف على الأفكار السلبية</span>
+                            <span>🔄 حول 'لا أستطيع' إلى 'سأحاول'</span>
+                            <span>💪 ركز على ما يمكنك التحكم فيه</span>
+                            <span>🌱 احتفل بالنجاحات الصغيرة</span>
+                        </div>
+                    </div>
+
+                    <div class="thinking-card" data-aos="flip-right">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="التأكيدات الإيجابية" class="thinking-image">
+                        <h3>التأكيدات الإيجابية</h3>
+                        <p>استخدم كلمات إيجابية لتعزيز ثقتك بنفسك</p>
+                        <div class="thinking-tips">
+                            <span>🗣️ اكتب عبارات إيجابية عن نفسك</span>
+                            <span>🔄 كررها يومياً بصوت عالٍ</span>
+                            <span>💖 آمن بما تقوله</span>
+                            <span>🌞 ابدأ يومك بهذه التأكيدات</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="psychological-section" style="background-color: #f0f8ff; padding: 4rem 0;">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">تمارين تحسين النوم</h2>
+                <p class="section-subtitle" data-aos="fade-up">استراتيجيات لمساعدتك على النوم بعمق واستعادة طاقتك</p>
+
+                <div class="sleep-content">
+                    <div class="sleep-text" data-aos="fade-right">
+                        <h3>روتين النوم الصحي</h3>
+                        <div class="sleep-points">
+                            <div class="point">
+                                <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="روتين النوم الثابت">
+                                <div>
+                                    <h4>روتين ثابت</h4>
+                                    <p>اذهب إلى الفراش واستيقظ في نفس الوقت يومياً</p>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="بيئة النوم المريحة">
+                                <div>
+                                    <h4>بيئة مريحة</h4>
+                                    <p>اجعل غرفة النوم مظلمة وهادئة وباردة</p>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="الاسترخاء قبل النوم">
+                                <div>
+                                    <h4>الاسترخاء قبل النوم</h4>
+                                    <p>اقرأ كتاباً أو استمع لموسيقى هادئة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sleep-video" data-aos="fade-left">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/aEqlQvczMJQ" title="تمارين الاسترخاء للنوم العميق" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- مساحة تفريغ المشاعر -->
+        <div class="space"
+         style="background-image: linear-gradient(180deg, rgba(204, 255, 246, 0.6) 0%, #63769b 80%);
+    padding-top: 40px;">
+            <div class="title">
+                <h1>مساحة تفريغ المشاعر</h1>
+                 <i class="fa-solid fa-feather"></i>
+            </div>
+            <p>احكي لنفسك… شو بتحس الآن؟</p>
+            <form id="emotions-form">
+                <textarea id="emotions-text" placeholder="مساحتك الآمنة للتعبير
+اكتب مشاعرك، مش مطلوب منك صياغة كاملة… بس عبّر"></textarea>
+                <div>
+                    <button type="button" id="save-btn" >حفظ مشاعري</button>
+                    <button type="button" id="clear-btn">مسح</button>
+                <div>
+                        <button id="show-emotions-btn" type="button" 
+                    style="margin: 8px 45%;">عرض مشاعري السابقة</button>
+     <div id="saved-emotions" class="emotions-container"></div>
+  <button id="delete-all-btn" type="button" style="display:none;margin: 8px 45%;">مسح كل مشاعري</button>
+                </div>
+
+
+
+
+                </div>
+            </form>
+        </div>
+     <!-- شعورك الان -->
+     <section class="mood-section">
+    <h2>💛 كيف شعورك اليوم؟</h2>
+    <p>اختار الشعور الأقرب إلك…</p>
+
+    <div class="mood-options">
+        <label class="mood-card">
+            <input type="radio" name="mood" />
+            😊  <span>هادئ</span>
+        </label>
+
+        <label class="mood-card">
+            <input type="radio" name="mood" />
+            😴 <span>مرهق</span>
+        </label>
+
+        <label class="mood-card">
+            <input type="radio" name="mood" />
+            😔 <span>حزين</span>
+        </label>
+
+        <label class="mood-card">
+            <input type="radio" name="mood" />
+            😤 <span>قلق</span>
+        </label>
+
+        <label class="mood-card">
+            <input type="radio" name="mood" />
+            🤍 <span>بحاجة لراحة</span>
+        </label>
+    </div>
+      <p class="mood-tip">نصيحة سريعة: لو اخترتي "قلق" أو "حزين" جرّبي تمرين التنفّس لمدة دقيقة.</p>
+</section>
+
+       <!-- مواجهة المشاكل -->
+<section class="abc-model">
+  <h2>مواجهة الأفكار السلبية – ABC Model</h2>
+
+  <div class="abc-item">
+    <input type="checkbox" id="stepA">
+    <label for="stepA">
+      <span class="icon">📌</span> A: الحدث
+    </label>
+    <div class="abc-content">
+      <p><strong>الحدث:</strong> ما الذي حصل لك؟ مثال: "صديقي لم يرد على رسالتي".</p>
+      <textarea placeholder="اكتب الحدث هنا..."></textarea>
+      <p class="tip">💡 نصيحة: ركزي على الحدث نفسه بدون حكم أو افتراضات.</p>
+    </div>
+  </div>
+
+  <div class="abc-item">
+    <input type="checkbox" id="stepB">
+    <label for="stepB">
+      <span class="icon">💭</span> B: الفكرة
+    </label>
+    <div class="abc-content">
+      <p><strong>الفكرة:</strong> ما هي الأفكار أو المعتقدات التي ظهرت عند الحدث؟ مثال: "أكيد هو زعلان مني".</p>
+      <textarea placeholder="اكتب الفكرة هنا..."></textarea>
+      <p class="tip">💡 نصيحة: حاولي ملاحظة أي أفكار سلبية أو غير منطقية.</p>
+    </div>
+  </div>
+
+  <div class="abc-item">
+    <input type="checkbox" id="stepC">
+    <label for="stepC">
+      <span class="icon">⚡</span> C: النتيجة
+    </label>
+    <div class="abc-content">
+      <p><strong>النتيجة:</strong> ما هو شعورك أو تصرفك الناتج عن الفكرة؟ مثال: "حزن أو قلق".</p>
+      <textarea placeholder="اكتب النتيجة هنا..."></textarea>
+      <p class="tip">💡 نصيحة: فكري كيف يمكن إعادة صياغة الفكرة لتغيير النتيجة إلى أفضل.</p>
+    </div>
+  </div>
+</section>
+<!-- اقتباسات -->
+<section class="daily-message">
+  <h2>رسالة اليوم 🌸</h2>
+  <div class="quotes">
+    <p id="daily-quote"></p>
+  </div>
+</section>
+
+    </section>
+
+    <footer>
+        <p>&copy; موقع نفس. جميع الحقوق محفوظة 2025</p>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+     </div>
+    <!-- css -->
+      
+    

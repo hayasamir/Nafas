@@ -1,28 +1,33 @@
 //  بوكس المشاعر
-        document.getElementById('save-btn').addEventListener('click', function() {
+document.getElementById('save-btn').addEventListener('click', function() {
     const emotions = document.getElementById('emotions-text').value;
 
     if (emotions.trim()) {
-  
+
         let emotionsList = JSON.parse(localStorage.getItem('emotionsList')) || [];
 
-   
         emotionsList.push({
             text: emotions,
             date: new Date().toLocaleString()
         });
         localStorage.setItem('emotionsList', JSON.stringify(emotionsList));
 
-     alert("💛 تم حفظ مشاعرك بأمان ,, مساحتك الخاصة محفوظة فقط على جهازك.");
+        alert("💛 تم حفظ مشاعرك بأمان ,, مساحتك الخاصة محفوظة فقط على جهازك.");
         document.getElementById('emotions-text').value = '';
+
+        // 🔥 السطر المهم: خلي الزر يظهر فورًا بدون إعادة تحميل
+        checkButtonVisibility();
+
     } else {
         alert('يرجى كتابة مشاعرك أولاً');
     }
 });
+
 document.getElementById('clear-btn').addEventListener('click', function() {
     document.getElementById('emotions-text').value = '';
     alert('تم مسح المشاعر بنجاح');
 });
+
 // المشاعر المخزنة
 function checkButtonVisibility() {
     const emotionsList = JSON.parse(localStorage.getItem('emotionsList')) || [];
@@ -58,8 +63,10 @@ function showSavedEmotions() {
             <div class="text">💬 ${item.text}</div>
         </div>
     `).join('');
+
     deleteBtn.style.display = 'block';
 }
+
 
 // مسح المشاعر
 document.getElementById('delete-all-btn').addEventListener('click', function() {
@@ -141,4 +148,5 @@ const quotes = [
   const quoteIndex = dayOfYear % quotes.length;
 
   // نعرض الاقتباس في الصفحة
+
   document.getElementById('daily-quote').textContent = quotes[quoteIndex];
